@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/id_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fieldimg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/roundImageView"
+                android:src="@drawable/testimg"/>
+            <TextView
+                android:id="@+id/fieldname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site 1"
+                android:layout_below="@+id/fieldimg"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+                <ImageView
+                    android:id="@+id/iconlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_location_on_24"
+                    android:layout_below="@id/fieldname"
+                    app:tint="@color/green" />
+            <TextView
+                android:id="@+id/locationfield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fieldname"
+                android:text="Davao del Sur"
+                android:layout_toEndOf="@id/iconlocation"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

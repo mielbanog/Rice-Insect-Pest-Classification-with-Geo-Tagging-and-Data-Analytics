@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Classify"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/activity"
+        android:title="Activity"
+        android:icon="@drawable/restore"/>
+
+
+    <item
+        android:id="@+id/plantation"
+        android:title="Plantation"
+        android:icon="@drawable/restore"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+
+</menu>
