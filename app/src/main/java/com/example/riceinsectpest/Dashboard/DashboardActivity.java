@@ -1,8 +1,11 @@
 package com.example.riceinsectpest.Dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,22 +15,31 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.riceinsectpest.Adapters.Fields_RcViewAdapter;
+import com.example.riceinsectpest.Adress.LocationActivity;
+import com.example.riceinsectpest.MainActivity;
 import com.example.riceinsectpest.R;
 
 public class DashboardActivity extends AppCompatActivity {
 
     private Fields_RcViewAdapter objectRVAdapter;
     private RecyclerView recyclerView;
-
+    AppCompatButton createnewFieldbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-
+        createnewFieldbtn = findViewById(R.id.createfieldbtn);
         ImageView searchIcon = findViewById(R.id.searchIcon);
         EditText searchEditText = findViewById(R.id.searchEditText);
 
+        createnewFieldbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashboardActivity.this, LocationActivity.class);
+                startActivity(intent);
+            }
+        });
         searchIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
