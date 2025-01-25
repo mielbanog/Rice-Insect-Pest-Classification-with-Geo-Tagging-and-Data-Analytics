@@ -194,7 +194,7 @@
 
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/FloatngActionMenu"
+        android:id="@+id/floatngActionMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -212,7 +212,7 @@
 
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/Camera"
+            android:id="@+id/camera_Fbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_colorNormal="@color/white"
@@ -222,7 +222,7 @@
             app:fab_title="Take a Picture" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/Gallery"
+            android:id="@+id/gallery_Fbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="normal"
@@ -232,7 +232,7 @@
             app:fab_title="Select from Gallery" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/Home"
+            android:id="@+id/createfield_Fbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="normal"

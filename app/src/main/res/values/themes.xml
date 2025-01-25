@@ -7,6 +7,7 @@
     </style>
 
     <style name="Theme.RiceInsectPest" parent="Base.Theme.RiceInsectPest" >
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="colorPrimary">@color/primaryvariant</item>
         <item name="colorPrimaryVariant">@color/primaryvariant</item>
         <item name="colorOnPrimary">@color/white</item>
