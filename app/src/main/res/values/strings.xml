@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Rice Insect Pest</string>
+
+
+    <string name="choose_region">Select Region</string>
+    <string name="choose_province">Select Province</string>
+    <string name="choose_city">Select City</string>
+    <string name="choose_barangay">Select Barangay</string>
 </resources>

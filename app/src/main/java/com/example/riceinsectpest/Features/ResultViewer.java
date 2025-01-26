@@ -28,6 +28,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.riceinsectpest.Address.LocationActivity;
 import com.example.riceinsectpest.Dashboard.DashboardActivity;
 import com.example.riceinsectpest.R;
 import com.example.riceinsectpest.ml.InsectmodelIncept;
@@ -332,6 +333,17 @@ public class ResultViewer extends AppCompatActivity {
             e.printStackTrace();
         }
         return rotate;
+    }
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(ResultViewer.this, DashboardActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                Intent.FLAG_ACTIVITY_SINGLE_TOP |
+                Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 

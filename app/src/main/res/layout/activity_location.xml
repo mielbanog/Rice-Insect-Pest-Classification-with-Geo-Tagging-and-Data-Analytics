@@ -4,33 +4,36 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <AutoCompleteTextView
-        android:id="@+id/autocomplete_province"
+    <Spinner
+        android:id="@+id/spinner_region"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Select Province"
-        android:backgroundTint="@color/dark_white"
-        android:drawableEnd="@drawable/down_ic" />
+        android:layout_marginVertical="5dp"
+        android:prompt="@string/choose_region" />
 
-    <AutoCompleteTextView
-        android:id="@+id/autocomplete_municipality"
+    <Spinner
+        android:id="@+id/spinner_province"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Select Municipality"
-        android:backgroundTint="@color/dark_white"
-        android:drawableEnd="@drawable/down_ic"/>
+        android:prompt="@string/choose_province" />
 
-    <AutoCompleteTextView
-        android:id="@+id/autocomplete_barangay"
+    <Spinner
+        android:id="@+id/spinner_city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/dark_white"
-        android:hint="Select Barangay"
-        android:drawableEnd="@drawable/down_ic"/>
+        android:layout_marginVertical="5dp"
+        android:prompt="@string/choose_city" />
+
+    <Spinner
+        android:id="@+id/spinner_barangay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/choose_barangay" />
 
     <Button
         android:id="@+id/button_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         android:text="Submit" />
 </LinearLayout>
