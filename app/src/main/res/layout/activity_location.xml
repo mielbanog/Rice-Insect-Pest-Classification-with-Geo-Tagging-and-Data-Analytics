@@ -1,9 +1,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/FieldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Farm name"
+            android:layout_marginBottom="30dp"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:background="@color/gray1"
+            android:text="Address"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Region"/>
     <Spinner
         android:id="@+id/spinner_region"
         android:layout_width="match_parent"
@@ -11,29 +49,93 @@
         android:layout_marginVertical="5dp"
         android:prompt="@string/choose_region" />
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Province"/>
     <Spinner
         android:id="@+id/spinner_province"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/choose_province" />
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City"/>
     <Spinner
         android:id="@+id/spinner_city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="5dp"
         android:prompt="@string/choose_city" />
 
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barangay"/>
     <Spinner
         android:id="@+id/spinner_barangay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/choose_barangay" />
 
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Purok"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/latLngTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:text="Lat: 6.727894, Lng: 125.349165"
+        android:textColor="@android:color/black"/>
+
+
     <Button
         android:id="@+id/button_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="5dp"
+        android:enabled="false"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:text="Submit" />
+    </LinearLayout>
 </LinearLayout>

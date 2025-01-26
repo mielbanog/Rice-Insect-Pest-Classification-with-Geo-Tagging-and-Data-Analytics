@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RiceInsectPest"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCyxlG3zhqOAzL8pu4Wdp6UQJU2zvfQYZs" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.riceinsectpest.fileprovider"
